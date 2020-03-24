@@ -1,4 +1,4 @@
-# Hall Management System
+# Student Hall Management System
 Undergraduate Project Based on Java, JavaFX
 
 Residential Student Hall/Mess Management System Desktop JavaFX Application
