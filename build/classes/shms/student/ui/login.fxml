@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@student.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.student.ui.LoginController">
+   <children>
+      <Pane fx:id="pane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#b2b2b2" layoutX="189.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Login">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <JFXTextField fx:id="usernameField" labelFloat="true" layoutX="284.0" layoutY="143.0" prefHeight="38.0" prefWidth="255.0" promptText="Username" />
+      <JFXPasswordField fx:id="passwordField" labelFloat="true" layoutX="284.0" layoutY="228.0" prefHeight="38.0" prefWidth="255.0" promptText="Password" />
+      <JFXButton fx:id="loginButton" layoutX="470.0" layoutY="297.0" onAction="#loginButtonAction" text="Login" />
+      <JFXButton fx:id="signupButton" layoutX="365.0" layoutY="297.0" onAction="#signupButtonAction" text="Signup" />
+      <Label fx:id="forgotPassword" layoutX="68.0" layoutY="307.0" onMouseClicked="#forgotPasswordAction" text="Forgot Password?" textFill="#1976d2" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <FontAwesomeIconView glyphName="LOCK" layoutX="63.0" layoutY="281.0" size="200" />
+      <FontAwesomeIconView glyphName="USER" layoutX="247.0" layoutY="176.0" size="30" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="247.0" layoutY="261.0" size="30" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="640.0" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.admin.ui.HallInfoController">
+   <children>
+      <Pane fx:id="pane" prefHeight="457.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="187.0" layoutY="33.0" text="Hall Information" textFill="#b2b2b2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="COGS" layoutX="44.0" layoutY="300.0" size="200" />
+            <JFXTextField fx:id="hallNameField" labelFloat="true" layoutX="344.0" layoutY="110.0" prefHeight="38.0" prefWidth="255.0" promptText="Hall Name" />
+            <JFXComboBox fx:id="hallTypeCombo" focusColor="#1976d2" labelFloat="true" layoutX="344.0" layoutY="175.0" prefHeight="38.0" prefWidth="255.0" promptText="Select Hall Type" />
+            <JFXTextField fx:id="institutionField" labelFloat="true" layoutX="344.0" layoutY="239.0" prefHeight="38.0" prefWidth="255.0" promptText="Institution" />
+            <JFXTextField fx:id="addressField" labelFloat="true" layoutX="344.0" layoutY="302.0" prefHeight="38.0" prefWidth="255.0" promptText="Address" />
+            <JFXTextField fx:id="emailField" labelFloat="true" layoutX="344.0" layoutY="366.0" prefHeight="38.0" prefWidth="255.0" promptText="Contact Email" />
+            <JFXTextField fx:id="contactNumberField" labelFloat="true" layoutX="344.0" layoutY="432.0" prefHeight="38.0" prefWidth="255.0" promptText="Contact Number" />
+            <JFXButton fx:id="saveButton" layoutX="436.0" layoutY="506.0" onAction="#saveButtonAction" text="Save" />
+            <JFXButton fx:id="cancelButton" layoutX="522.0" layoutY="506.0" onAction="#cancelButtonAction" text="Cancel" />
+            <FontAwesomeIconView glyphName="HOTEL" layoutX="299.0" layoutY="143.0" size="30" />
+            <FontAwesomeIconView glyphName="USER" layoutX="306.0" layoutY="208.0" size="30" />
+            <FontAwesomeIconView glyphName="INSTITUTION" layoutX="299.0" layoutY="272.0" size="30" />
+            <FontAwesomeIconView glyphName="LOCATION_ARROW" layoutX="304.0" layoutY="339.0" size="30" />
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="302.0" layoutY="398.0" size="30" />
+            <FontAwesomeIconView glyphName="PHONE_SQUARE" layoutX="305.0" layoutY="465.0" size="30" />
+         </children></Pane>
+   </children>
+</AnchorPane>

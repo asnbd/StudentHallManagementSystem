@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="750.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="86.0" prefWidth="946.0">
+               <children>
+                  <Label text="Daily Meal Rate" textFill="#b2b2b2">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="79.0" prefWidth="960.0">
+               <children>
+                  <JFXComboBox prefHeight="31.0" prefWidth="273.0" promptText="Choose Month">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <JFXButton text="Go">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="946.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="194.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunch">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="231.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinner">
+                                 <HBox.margin>
+                                    <Insets left="50.0" right="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="01">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="02">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="03">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="277.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="04">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="295.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="05">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="307.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="06">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="316.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="07">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="322.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="08">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="327.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="09">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="331.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="334.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="341.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="372.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="13">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="403.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="434.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="329.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="194.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunch">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="231.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinner">
+                                 <HBox.margin>
+                                    <Insets left="50.0" right="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="16">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="17">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="18">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="277.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="19">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="295.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="307.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="21">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="316.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="22">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="322.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="327.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="24">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="331.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="334.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="26">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="341.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="27">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="372.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="403.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="29">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="434.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="30">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="465.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="31">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                              <JFXTextField alignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton text="Update Meal" />
+                  <JFXButton layoutX="437.0" layoutY="44.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
