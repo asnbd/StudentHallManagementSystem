@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="640.0" stylesheets="@../admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.admin.ui.adminpanel.RecieveBillController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="448.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="600.0">
+               <children>
+                  <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Recieve Bill">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="350.0" prefWidth="600.0">
+               <children>
+                  <FontAwesomeIconView glyphName="CREDIT_CARD" size="200">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="352.0" prefWidth="412.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="HASHTAG" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField fx:id="idField" labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="ID No.">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="CALENDAR" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-5.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXComboBox fx:id="chooseMonthCombo" prefHeight="31.0" prefWidth="360.0" promptText="Choose Month">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </JFXComboBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="316.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="MONEY" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-10.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField fx:id="amountField" labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Amount">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField fx:id="paymentDateField" labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Payment Date">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="recieveButton" onAction="#recieveButtonAction" text="Recieve" />
+                              <JFXButton fx:id="cancelButton" onAction="#cancelButtonAction" text="Cancel">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

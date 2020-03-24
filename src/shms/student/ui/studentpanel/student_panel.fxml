@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1024.0" stylesheets="@../student.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.student.ui.studentpanel.StudentPanelController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#closeMenuAction" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="addMealMenu" mnemonicParsing="false" onAction="#addMealButtonAction" text="Add Meal" />
+                        <MenuItem fx:id="newComplaintMenu" mnemonicParsing="false" onAction="#newComplaintButtonAction" text="New Complaint" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Options">
+                     <items>
+                        <MenuItem fx:id="settingsMenu" mnemonicParsing="false" onAction="#settingsButtonAction" text="Settings" />
+                        <MenuItem fx:id="logoutMenu" mnemonicParsing="false" onAction="#logoutButtonAction" text="Logout" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#aboutMenuAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <JFXTabPane style="-fx-border-color: #1976D2;" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Food Menu">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="156.0" prefWidth="729.0">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="116.0" prefWidth="779.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text fill="#1976d2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Today's Food Menu:" wrappingWidth="500.6708984375">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Breakfast:" wrappingWidth="500.6708984375">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Lunch: " wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Dinner" wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#1976d2" layoutX="10.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Tomorrow's Food Menu:" wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="40.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Breakfast:" wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Lunch: " wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#b2b2b2" layoutX="10.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Dinner" wrappingWidth="500.6708984375">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Food Meals">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton text="Refresh" />
+                                          <JFXButton layoutX="401.0" layoutY="40.0" text="Update Meal">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                                 <center>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="194.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunch">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="231.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinner">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="01">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="02">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="03">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="04">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" selected="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="05">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" selected="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="375.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="06">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" selected="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="390.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="07">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="401.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="08">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="409.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="09">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="416.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="421.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="425.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="428.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="13">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="431.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="434.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="15">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="194.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lunch">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <Text fill="#b2b2b2" layoutX="231.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dinner">
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="16">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="17">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="18">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="19">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="375.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="21">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="390.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="22">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="401.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="409.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="24">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="416.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="421.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="26">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox disable="true" text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox disable="true" layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="425.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="27">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="428.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="431.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="29">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="87.0" layoutY="10.0" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="205.0" layoutY="10.0" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="434.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="30">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="10.0" layoutY="484.0" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="31">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <JFXCheckBox text="Breakfast" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="87.0" layoutY="10.0" selected="true" text="Lunch" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                      <JFXCheckBox layoutX="205.0" layoutY="10.0" selected="true" text="Dinner" textFill="#a1a1a1" unCheckedColor="#b2b2b2">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </JFXCheckBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets left="80.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </HBox>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Notice">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <JFXTextField labelFloat="true" promptText="Search Notice" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </top>
+                                 <center>
+                                    <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets />
+                                       </BorderPane.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </padding>
+                                    </ListView>
+                                 </center>
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton text="Refresh" />
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Bill Details">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="156.0" prefWidth="729.0">
+                                       <children>
+                                          <JFXComboBox layoutX="356.0" layoutY="73.0" prefHeight="31.0" prefWidth="346.0" promptText="Choose Month" />
+                                          <JFXButton text="Show">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin></JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="547.0" prefWidth="866.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="156.0" prefWidth="539.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="main-text" text="/* Display Bill Details */" textAlignment="CENTER" wrappingWidth="500.6708984375">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="166.0" prefHeight="156.0" prefWidth="729.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="156.0" prefWidth="539.0">
+                                             <HBox.margin>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <JFXButton text="Print" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Complaints">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <JFXTextField labelFloat="true" promptText="Search Complaints" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </top>
+                                 <center>
+                                    <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets />
+                                       </BorderPane.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                       </padding>
+                                    </ListView>
+                                 </center>
+                                 <bottom>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton text="Refresh" />
+                                          <JFXButton text="Edit">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin></JFXButton>
+                                          <JFXButton layoutX="445.0" layoutY="40.0" text="Delete">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </center>
+         <right>
+            <VBox prefHeight="539.0" prefWidth="156.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="addMealButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#addMealButtonAction" prefHeight="400.0" prefWidth="156.0" text="Add Meal">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS_SQUARE" size="35" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="newComplaintButton" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#newComplaintButtonAction" prefHeight="400.0" prefWidth="156.0" text="New Complaint">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="LIST" size="35" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="settingsButton" contentDisplay="TOP" layoutX="10.0" layoutY="292.0" mnemonicParsing="false" onAction="#settingsButtonAction" prefHeight="400.0" prefWidth="156.0" text="Settings">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="COG" size="35" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="logoutButton" contentDisplay="TOP" layoutX="10.0" layoutY="422.0" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="400.0" prefWidth="156.0" text="Log Out">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="35" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>

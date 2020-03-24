@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="878.0" prefWidth="640.0" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.hall.management.system.ui.login.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="448.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="600.0">
+               <children>
+                  <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Student">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="350.0" prefWidth="600.0">
+               <children>
+                  <FontAwesomeIconView glyphName="EDIT" size="200">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="352.0" prefWidth="412.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="HASHTAG" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="ID No.">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="USER" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Name">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="316.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PHONE_SQUARE" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-4.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Mobile">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="HASHTAG" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Room No.">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="322.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="USER" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Father's Name">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="322.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PHONE_SQUARE" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-4.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Father's Mobile">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="322.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="USER" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Mother's Name">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="327.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PHONE_SQUARE" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-4.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Mother's Mobile">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="238.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="USER" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Emergency Contact's Name">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="403.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PHONE_SQUARE" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-4.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField prefHeight="38.0" prefWidth="360.0" promptText="Emergency Contact's Mobile">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="237.0" prefWidth="330.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <TextArea prefHeight="136.0" prefWidth="360.0" promptText="Present Address">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="372.0" prefHeight="237.0" prefWidth="330.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-7.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <TextArea prefHeight="136.0" prefWidth="360.0" promptText="Permanent Address">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="signupButton" text="Update" />
+                              <JFXButton fx:id="loginButton" text="Cancel">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

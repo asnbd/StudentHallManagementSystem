@@ -1,0 +1,29 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #1976D2;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-blue;
+    -fx-font-size: 13pt;
+}
+
+.button:hover{
+    -fx-border-color: -fx-primarytext;
+    -fx-background-color: -fx-blue;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}

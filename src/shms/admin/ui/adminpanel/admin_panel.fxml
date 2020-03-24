@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="rootPane" prefHeight="684.0" prefWidth="1024.0" stylesheets="@../admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.admin.ui.adminpanel.AdminPanelController">
+   
+    <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#closeMenuAction" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem fx:id="registerStudentMenu" mnemonicParsing="false" onAction="#registerStudentButtonAction" text="Register Student" />
+                  <MenuItem fx:id="addMealMenu" mnemonicParsing="false" onAction="#addMealButtonAction" text="Add Meal" />
+                  <MenuItem fx:id="newNoticeMenu" mnemonicParsing="false" onAction="#newNoticeButtonAction" text="New Notice" />
+                  <MenuItem fx:id="recieveBillMenu" mnemonicParsing="false" onAction="#recieveBillButtonAction" text="Recieve Bill" />
+                  <MenuItem fx:id="dailyMealBillsMenu" mnemonicParsing="false" onAction="#dailyMealBillsButtonAction" text="Daily Meal Bills" />
+                  <MenuItem fx:id="billSetupMenu" mnemonicParsing="false" onAction="#billSetupButtonAction" text="Bill Setup" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#studentListMenuAction" text="Student List" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#fullScreenMenuAction" text="Full Screen" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem fx:id="settingsMenu" mnemonicParsing="false" onAction="#settingsButtonAction" text="Settings" />
+                  <MenuItem fx:id="logoutMenu" mnemonicParsing="false" onAction="#logoutButtonAction" text="Logout" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="aboutMenu" mnemonicParsing="false" onAction="#aboutMenuAction" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   
+   <center>
+      <JFXTabPane style="-fx-border-color: #1976D2;" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Hall Details">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="271.0" prefWidth="866.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text fill="#1976d2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Hall Details:" wrappingWidth="500.6708984375">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Hall Name:" wrappingWidth="500.6708984375">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Hall Type:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Total Beds:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Available Beds:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Intitution:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" layoutX="10.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Address:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="98.0" prefWidth="866.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton onAction="#hallDetailsRefreshButtonAction" text="Refresh" />
+                              <JFXButton onAction="#hallDetailsEditButtonAction" text="Edit">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Rooms">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <JFXTextField labelFloat="true" promptText="Search Rooms" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </BorderPane.margin>
+                              </JFXTextField>
+                           </top>
+                           <center>
+                              <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                              </ListView>
+                           </center>
+                           <bottom>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton text="Refresh" />
+                                    <JFXButton layoutX="401.0" layoutY="40.0" text="Edit">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Students">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <JFXTextField labelFloat="true" promptText="Search Student" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </BorderPane.margin>
+                              </JFXTextField>
+                           </top>
+                           <bottom>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton text="Refresh" />
+                                    <JFXButton layoutX="401.0" layoutY="40.0" text="Add">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton layoutX="444.0" layoutY="45.0" text="Edit">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton layoutX="535.0" layoutY="45.0" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="importFromExcelButton" layoutX="355.0" layoutY="40.0" onAction="#importFromExcelButtonAction" text="Import From Excel">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Bill Details">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="156.0" prefWidth="729.0">
+                                 <children>
+                                    <JFXTextField labelFloat="true" prefHeight="31.0" prefWidth="300.0" promptText="Enter ID No.">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXComboBox prefHeight="37.0" prefWidth="300.0" promptText="Choose Month">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXComboBox>
+                                    <JFXButton text="Show">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="382.0" prefWidth="866.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="main-text" text="/* Display Bill Details */" textAlignment="CENTER" wrappingWidth="500.6708984375" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="166.0" prefHeight="83.0" prefWidth="866.0">
+                                 <children>
+                                    <JFXButton text="Print" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Reports">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="87.0" prefWidth="866.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXComboBox layoutX="356.0" layoutY="73.0" prefHeight="31.0" prefWidth="300.0" promptText="Choose Month" />
+                              <JFXComboBox layoutX="296.0" layoutY="51.0" prefHeight="31.0" prefWidth="300.0" promptText="Choose Report Type">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXComboBox>
+                              <JFXButton text="Show">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="98.0" prefHeight="386.0" prefWidth="866.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="main-text" text="/* Display Report */" textAlignment="CENTER" wrappingWidth="500.6708984375" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="866.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton text="Print" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Food Meals">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="480.0" prefWidth="866.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXTextField promptText="Enter ID No." />
+                              <Text fill="#1976d2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Student Info:" wrappingWidth="500.6708984375">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="ID:" wrappingWidth="500.6708984375">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Name:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="food-menu-header" text="Room No:" wrappingWidth="500.6708984375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="150.0" right="150.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton text="Update Meal" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Notice">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <JFXTextField labelFloat="true" promptText="Search Notice" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </BorderPane.margin>
+                              </JFXTextField>
+                           </top>
+                           <center>
+                              <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                              </ListView>
+                           </center>
+                           <bottom>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton text="Refresh" />
+                                    <JFXButton layoutX="408.0" layoutY="45.0" text="New" />
+                                    <JFXButton layoutX="443.0" layoutY="45.0" text="Edit" />
+                                    <JFXButton layoutX="480.0" layoutY="45.0" text="Delete" />
+                                 </children>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Complaints">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="201.0" layoutY="99.0" prefHeight="432.0" prefWidth="729.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <JFXTextField labelFloat="true" promptText="Search Complaints" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                                 </BorderPane.margin>
+                              </JFXTextField>
+                           </top>
+                           <center>
+                              <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                 </padding>
+                              </ListView>
+                           </center>
+                           <bottom>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton text="Refresh" />
+                                    <JFXButton text="Mark as Solved">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton layoutX="445.0" layoutY="40.0" text="Delete">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+   
+   <right>
+      <VBox prefHeight="539.0" prefWidth="156.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="registerStudentButton" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#registerStudentButtonAction" prefHeight="400.0" prefWidth="156.0" text="Register Student">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_PLUS" size="35" /></graphic>
+            </JFXButton>
+            <JFXButton fx:id="addMealButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#addMealButtonAction" prefHeight="400.0" prefWidth="156.0" text="Add Meal">
+               <graphic><FontAwesomeIconView glyphName="PLUS_SQUARE" size="35" /></graphic>
+            </JFXButton>
+            <JFXButton fx:id="newNoticeButton" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#newNoticeButtonAction" prefHeight="400.0" prefWidth="156.0" text="New Notice">
+               <graphic><FontAwesomeIconView glyphName="THUMB_TACK" size="35" /></graphic>
+            </JFXButton>
+            <JFXButton fx:id="recieveBillButton" contentDisplay="TOP" layoutX="10.0" layoutY="266.0" mnemonicParsing="false" onAction="#recieveBillButtonAction" prefHeight="400.0" prefWidth="156.0" text="Recieve Bill">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CREDIT_CARD_ALT" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="dailyMealBillsButton" contentDisplay="TOP" layoutX="10.0" layoutY="448.0" mnemonicParsing="false" onAction="#dailyMealBillsButtonAction" prefHeight="400.0" prefWidth="156.0" text="Daily Meal Bills">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LIST" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="billSetupButton" contentDisplay="TOP" layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onAction="#billSetupButtonAction" prefHeight="400.0" prefWidth="156.0" text="Bill Setup">
+               <graphic>
+                  <FontAwesomeIconView glyphName="LIST" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="settingsButton" contentDisplay="TOP" layoutX="10.0" layoutY="292.0" mnemonicParsing="false" onAction="#settingsButtonAction" prefHeight="400.0" prefWidth="156.0" text="Settings">
+               <graphic>
+                  <FontAwesomeIconView glyphName="COG" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="logoutButton" contentDisplay="TOP" layoutX="10.0" layoutY="422.0" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="400.0" prefWidth="156.0" text="Log Out">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="35" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </right>
+   
+</BorderPane>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="640.0" stylesheets="@../admin.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="507.0" prefWidth="636.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="69.0" prefWidth="600.0">
+               <children>
+                  <Text fill="#b2b2b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Setup">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="254.0" prefWidth="600.0">
+               <children>
+                  <FontAwesomeIconView glyphName="COG" size="200">
+                     <HBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="352.0" prefWidth="412.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="BED" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-8.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Seat Rent" text="2200">
+                                 <HBox.margin>
+                                    <Insets left="13.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="TAG" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Service Charge" text="0%">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="132.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="FIRE" size="30">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Fuel &amp; Spices Charge" text="237.26">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="162.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <FontAwesomeIconView glyphName="INTERNET_EXPLORER" size="30">
+                                 <HBox.margin>
+                                    <Insets left="-6.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField labelFloat="true" prefHeight="38.0" prefWidth="360.0" promptText="Internet Bill" text="300">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="214.0" prefHeight="100.0" prefWidth="200.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXButton fx:id="signupButton" text="Update" />
+                              <JFXButton fx:id="loginButton" text="Cancel" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="35.0" top="40.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

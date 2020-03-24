@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="800.0" stylesheets="@welcome.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.main.ui.welcome.WelcomeController">
+   <children>
+      <Pane fx:id="pane" prefHeight="491.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#00bbff" layoutX="39.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+            <Text fill="#00bbff" layoutX="378.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT HALL">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#00bbff" layoutX="378.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGEMENT SYSTEM">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView glyphName="TV" layoutX="57.0" layoutY="422.0" size="300" />
+            <JFXButton fx:id="adminButton" buttonType="RAISED" contentDisplay="TOP" layoutX="464.0" layoutY="224.0" onAction="#adminButtonAction" prefHeight="81.0" prefWidth="269.0" text="Admin">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER_SECRET" size="30" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="studentButton" buttonType="RAISED" contentDisplay="TOP" layoutX="464.0" layoutY="327.0" onAction="#studentButtonAction" prefHeight="81.0" prefWidth="269.0" text="Student">
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="30" />
+               </graphic></JFXButton>
+            <Text fill="#0075ff" layoutX="354.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|">
+               <font>
+                  <Font size="80.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView glyphName="BUILDING" layoutX="114.0" layoutY="347.0" size="150" />
+            <FontAwesomeIconView glyphName="BED" layoutX="250.0" layoutY="354.0" size="68" />
+            <FontAwesomeIconView glyphName="USERS" layoutX="254.0" layoutY="281.0" size="65" />
+         </children></Pane>
+   </children>
+</AnchorPane>

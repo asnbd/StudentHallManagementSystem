@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="640.0" stylesheets="@student.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shms.student.ui.SignupController">
+   <children>
+      <Pane fx:id="pane" prefHeight="448.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#b2b2b2" layoutX="197.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Signup">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="idField" labelFloat="true" layoutX="344.0" layoutY="110.0" prefHeight="38.0" prefWidth="255.0" promptText="ID No." />
+            <JFXTextField fx:id="emailField" labelFloat="true" layoutX="344.0" layoutY="175.0" prefHeight="38.0" prefWidth="255.0" promptText="Email" />
+            <JFXPasswordField fx:id="passwordField" labelFloat="true" layoutX="344.0" layoutY="239.0" prefHeight="38.0" prefWidth="255.0" promptText="Password" />
+            <JFXPasswordField fx:id="passwordConfirmField" labelFloat="true" layoutX="344.0" layoutY="302.0" prefHeight="38.0" prefWidth="255.0" promptText="Confirm Password" />
+            <JFXButton fx:id="signupButton" layoutX="422.0" layoutY="376.0" onAction="#signupButtonAction" text="Signup" />
+            <JFXButton fx:id="cancelButton" layoutX="522.0" layoutY="376.0" onAction="#cancelButtonAction" text="Cancel" />
+            <FontAwesomeIconView glyphName="ADDRESS_CARD_ALT" layoutX="37.0" layoutY="300.0" size="200" />
+            <FontAwesomeIconView glyphName="HASHTAG" layoutX="307.0" layoutY="146.0" size="30" />
+            <MaterialDesignIconView glyphName="EMAIL" layoutX="307.0" layoutY="208.0" size="30" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="307.0" layoutY="272.0" size="30" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="307.0" layoutY="335.0" size="30" />
+         </children></Pane>
+   </children>
+</AnchorPane>
